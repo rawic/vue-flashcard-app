@@ -1,0 +1,52 @@
+*
+  box-sizing: border-box
+
+html
+  font-size: 14px
+
+body
+  font-family: 'Montserrat', sans-serif
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+  text-rendering: optimizeLegibility
+  font-variant-ligatures: none
+  -webkit-font-variant-ligatures: none
+  -webkit-text-size-adjust: 100%
+  color: $default
+  position: relative
+  text-align: center
+  &::before, &::after
+    content: ''
+    position: absolute
+    height: 350px
+    background-image: url('./assets/background-pattern.svg')
+    background-repeat: no-repeat
+    z-index: -1
+    top: 0
+    opacity: 0.3
+  &::before
+    width: 50%
+    background-position: right top -100px
+    left: 0
+  &::after
+    width: 55%
+    background-position: right top 120px
+    right: 0
+    transform: scale(-1, -1)
+
+input, button
+  font-family: inherit
+  font-size: inherit
+  &:focus
+    outline: none
+
+button
+  cursor: pointer
+
+a
+  text-decoration: none
+  color: $muted
+  display: inline-block
+  margin-left: 3px
+  &:hover
+    color: $highlight
