@@ -20,9 +20,7 @@
             />
           </svg>
         </button>
-        <h2 class="title">
-          {{ card.flipped ? card.back : card.front }}
-        </h2>
+        <h2 class="title">{{ card.flipped ? card.back : card.front }}</h2>
         <button
           type="button"
           class="like-icon"

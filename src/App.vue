@@ -20,9 +20,7 @@
           </span>
         </div>
         <!-- end of top message -->
-        <h1 class="title">
-          Simple Flashcard App
-        </h1>
+        <h1 class="title">Simple Flashcard App</h1>
         <Search @searchTrigger="searchCards"></Search>
       </header>
       <!-- end of page header -->
@@ -30,7 +28,7 @@
       <p class="likecounter">You have liked {{ likes }} cards so far</p>
       <ul class="cards-box">
         <Card
-          v-for="card in filteredCards"
+          v-for="card in filteredData"
           :key="card.id"
           :card="card"
           @likeTrigger="recalculateLikes"
@@ -50,7 +48,7 @@ import Card from "./components/Card";
 const uuidv4 = require("uuid/v4");
 const colors = ["-orange", "-red", "-purple", "-blue", "-green"];
 
-const cards = [
+let cards = [
   {
     id: uuidv4(),
     front: "Who would I like to work with? 🤔",
@@ -125,31 +123,36 @@ export default {
   data() {
     return {
       cards: cards,
-      filteredCards: cards,
+      searchWord: "",
       likes: cards.filter(card => card.liked).length
     };
   },
   methods: {
     searchCards(keyword) {
-      this.filteredCards = this.cards.filter(card => {
-        return card.front.toLowerCase().includes(keyword.trim().toLowerCase());
-      });
+      this.searchWord = keyword;
     },
     recalculateLikes(value) {
       value ? this.likes++ : this.likes--;
     },
     deleteCard(id) {
-      console.log(id);
       this.cards = this.cards.filter(card => {
         if (card.id === id && card.liked) {
           this.likes--;
         }
         return card.id !== id;
       });
-      this.filteredCards = this.cards;
     },
     addCard(data) {
       this.cards.unshift(data);
+    }
+  },
+  computed: {
+    filteredData() {
+      return this.cards.filter(card => {
+        return card.front
+          .toLowerCase()
+          .includes(this.searchWord.trim().toLowerCase());
+      });
     }
   },
   components: {

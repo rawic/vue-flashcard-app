@@ -33,6 +33,7 @@
 
 <script>
 const uuidv4 = require("uuid/v4");
+const colors = ["-orange", "-red", "-purple", "-blue", "-green"];
 
 export default {
   name: "AddNewCard",
@@ -53,7 +54,8 @@ export default {
           front: this.front,
           back: this.back,
           flipped: false,
-          liked: false
+          liked: false,
+          color: `${colors[Math.floor(Math.random() * colors.length)]}`
         };
         this.$emit("addCardTrigger", card);
         this.front = "";
