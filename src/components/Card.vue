@@ -67,98 +67,98 @@ export default {
 @import 'src/assets/sass/_variables.sass';
 
 svg
-	width: 100%
+  width: 100%
 
 .card-box
-	padding: 0.8rem
-	flex: 1 1 0
-	max-width: 283.5px
-	@media(max-width: 551px)
-		margin-left: auto
-		margin-right: auto
-	&.-orange .single-card
-		background-color: $card-orange
-		box-shadow: 0 0 12px 1px rgba($card-orange, .3)
-		&:hover
-			box-shadow: 0 0 14px 2px rgba($card-orange, .7)
-	&.-red .single-card
-		background-color: $card-red
-		box-shadow: 0 0 8px 1px rgba($card-red, .3)
-		&:hover
-			box-shadow: 0 0 14px 2px rgba($card-red, .7)
-	&.-purple .single-card
-		background-color: $card-purple
-		box-shadow: 0 0 12px 1px rgba($card-purple, .3)
-		&:hover
-			box-shadow: 0 0 14px 2px rgba($card-purple, .7)
-	&.-blue .single-card
-		background-color: $card-blue
-		box-shadow: 0 0 8px 1px rgba($card-blue, .3)
-		&:hover
-			box-shadow: 0 0 14px 2px rgba($card-blue, .7)
-	&.-green .single-card
-		background-color: $card-green
-		box-shadow: 0 0 8px 1px rgba($card-green, .3)
-		&:hover
-			box-shadow: 0 0 14px 2px rgba($card-green, .7)
+  padding: 0.8rem
+  flex: 1 1 0
+  max-width: 283.5px
+  @media(max-width: 551px)
+    margin-left: auto
+    margin-right: auto
+  &.-orange .single-card
+    background-color: $card-orange
+    box-shadow: 0 0 12px 1px rgba($card-orange, .3)
+    &:hover
+      box-shadow: 0 0 14px 2px rgba($card-orange, .7)
+  &.-red .single-card
+    background-color: $card-red
+    box-shadow: 0 0 8px 1px rgba($card-red, .3)
+    &:hover
+    box-shadow: 0 0 14px 2px rgba($card-red, .7)
+  &.-purple .single-card
+    background-color: $card-purple
+    box-shadow: 0 0 12px 1px rgba($card-purple, .3)
+    &:hover
+      box-shadow: 0 0 14px 2px rgba($card-purple, .7)
+  &.-blue .single-card
+    background-color: $card-blue
+    box-shadow: 0 0 8px 1px rgba($card-blue, .3)
+    &:hover
+      box-shadow: 0 0 14px 2px rgba($card-blue, .7)
+  &.-green .single-card
+    background-color: $card-green
+    box-shadow: 0 0 8px 1px rgba($card-green, .3)
+    &:hover
+      box-shadow: 0 0 14px 2px rgba($card-green, .7)
 
 .single-card
-	width: 250px
-	border-radius: $radius
-	height: 335px
-	padding: 80px 30px
-	background-color: $card-blue
-	margin: 5px
-	text-align: center
-	cursor: pointer
-	position: relative
-	color: #fff
-	box-shadow: 0 0 8px 1px rgba($card-blue, .3)
-	transition: box-shadow .3s
-	&:hover
-		box-shadow: 0 0 8px 1px rgba($card-blue, 1)
-	.title
-		font-size: 1.286rem
-		line-height: 1.6
-		font-weight: $bold
+  width: 250px
+  border-radius: $radius
+  height: 335px
+  padding: 80px 30px
+  background-color: $card-blue
+  margin: 5px
+  text-align: center
+  cursor: pointer
+  position: relative
+  color: #fff
+  box-shadow: 0 0 8px 1px rgba($card-blue, .3)
+  transition: box-shadow .3s
+  &:hover
+    box-shadow: 0 0 8px 1px rgba($card-blue, 1)
+  .title
+    font-size: 1.286rem
+    line-height: 1.6
+    font-weight: $bold
 
 button
-	border: 0
-	background-color: transparent
-	position: absolute
-	fill: white
-	padding: 0
+  border: 0
+  background-color: transparent
+  position: absolute
+  fill: white
+  padding: 0
 
 .delete-icon
-	right: 15px
-	top: 15px
-	width: 25px
-	.icon
-		opacity: 0.5
-		transition: all .5s
-		&:hover
-			transform: rotate(180deg)
-			opacity: 1
+  right: 15px
+  top: 15px
+  width: 25px
+  .icon
+    opacity: 0.5
+    transition: all .5s
+    &:hover
+      transform: rotate(180deg)
+      opacity: 1
 
 .like-icon
-	bottom: 15px
-	width: 30px
-	left: 0
-	right: 0
-	margin-left: auto
-	margin-right: auto
-	fill: white
-	opacity: .4
-	&:hover
-		opacity: 0.6
-	&.-liked
-		opacity: 1
+  bottom: 15px
+  width: 30px
+  left: 0
+  right: 0
+  margin-left: auto
+  margin-right: auto
+  fill: white
+  opacity: .4
+  &:hover
+    opacity: 0.6
+  &.-liked
+    opacity: 1
 
 .flip-enter-active
-	transition: all 0.6s
+  transition: all 0.6s
 .flip-leave-active
-	display: none
+  display: none
 .flip-enter, .flip-leave
-	transform: rotateY(180deg)
-	opacity: 0
+  transform: rotateY(180deg)
+  opacity: 0
 </style>

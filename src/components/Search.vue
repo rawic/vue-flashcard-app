@@ -44,37 +44,37 @@ export default {
 <style scoped lang="sass">
 @import 'src/assets/sass/_variables.sass';
 .search-box
-	background-color: $greybg
-	width: 300px
-	border-radius: $radius
-	height: 40px
-	display: flex
-	align-items: center
-	margin-left: auto
-	margin-right: auto
-	position: relative
-	overflow: hidden
-	transition: background-color .3s
-	&:hover
-		background-color: darken($greybg, 3%)
+  background-color: $greybg
+  width: 300px
+  border-radius: $radius
+  height: 40px
+  display: flex
+  align-items: center
+  margin-left: auto
+  margin-right: auto
+  position: relative
+  overflow: hidden
+  transition: background-color .3s
+  &:hover
+    background-color: darken($greybg, 3%)
 
-	.searchicon
-	  width: 17px
-	  position: absolute
-	  left: 15px
+  .searchicon
+    width: 17px
+    position: absolute
+    left: 15px
 
-	.input
-	  border: none
-	  background-color: transparent
-	  height: 100%
-	  width: 100%
-	  padding-left: 42px
-	  padding-right: 15px
-	  border-radius: $radius
-	  transition: all .3s
-	  &:focus
-	    background-color: $highlight
-	    color: white
-	    &::placeholder
-	      color: white
+  .input
+    border: none
+    background-color: transparent
+    height: 100%
+    width: 100%
+    padding-left: 42px
+    padding-right: 15px
+    border-radius: $radius
+    transition: all .3s
+    &:focus
+      background-color: $highlight
+      color: white
+      &::placeholder
+        color: white
 </style>

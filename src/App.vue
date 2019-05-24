@@ -167,45 +167,45 @@ export default {
 @import 'src/assets/sass/main.sass';
 
 .page-container
-	margin-left: auto
-	margin-right: auto
-	max-width: 1120px
-	padding-top: 1.5rem
-	padding-left: 1rem
-	padding-right: 1rem
-	overflow: hidden
+  margin-left: auto
+  margin-right: auto
+  max-width: 1120px
+  padding-top: 1.5rem
+  padding-left: 1rem
+  padding-right: 1rem
+  overflow: hidden
 
 .top-message
-	font-size: 0.8571rem
-	text-align: left
-	color: $muted
-	.text
-		display: flex
-		align-items: center
-	.icon
-		width: 20px
-		fill: #ff4242
-		margin-right: 9px
+  font-size: 0.8571rem
+  text-align: left
+  color: $muted
+  .text
+    display: flex
+    align-items: center
+  .icon
+    width: 20px
+    fill: #ff4242
+    margin-right: 9px
 
 .page-header
-	padding-bottom: 40px
-	border-bottom: 1px dashed #dedede
-	.title
-		font-size: 2.286rem
-		font-weight: $bold
-		text-align: center
-		margin-top: 3.5rem
-		margin-bottom: 3rem
+  padding-bottom: 40px
+  border-bottom: 1px dashed #dedede
+  .title
+    font-size: 2.286rem
+    font-weight: $bold
+    text-align: center
+    margin-top: 3.5rem
+    margin-bottom: 3rem
 
 .likecounter
-	font-size: 1.143rem
-	font-weight: $bold
+  font-size: 1.143rem
+  font-weight: $bold
 
 .cards-box
-	margin-top: 1rem
-	margin-left: -1.5rem
-	margin-right: -1.5rem
-	display: flex
-	flex-wrap: wrap
-	justify-content: center
+  margin-top: 1rem
+  margin-left: -1.5rem
+  margin-right: -1.5rem
+  display: flex
+  flex-wrap: wrap
+  justify-content: center
 </style>
