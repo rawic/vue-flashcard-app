@@ -77,7 +77,7 @@ let cards = [
   },
   {
     id: uuidv4(),
-    front: "When is my main goal? 💻",
+    front: "What is my main goal? 💻",
     back: "Learn something new and awesome! 🔥",
     flipped: false,
     liked: true,
