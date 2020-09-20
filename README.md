@@ -12,7 +12,7 @@
   </p>
 </p>
 
-## About The Hangman
+## About Flashcard app
 
 <a align="center" href="https://rawic.github.io/vue-flashcard-app/" rel="nofollow noopener noreferrer" target="blank">
   <img src="readme/app-screenshot.jpg" alt="rawic.me - home page" style="max-width: 100%;">
